@@ -1,0 +1,63 @@
+{% include 'cabecalho.html' %}
+
+<main class="container my-4">
+    <h1>Configurações do Sistema</h1>
+    <p>Gerencie as preferências e parâmetros gerais da aplicação.</p>
+
+    <div class="row gx-2">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Configurações Gerais</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><strong>Nome do Sistema:</strong> Dashboard Flask v1.0</p>
+                    <p class="card-text"><strong>Idioma Padrão:</strong> Português (Brasil)</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Editar Gerais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Segurança e Acesso</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><strong>Autenticação de Dois Fatores:</strong> Desativada</p>
+                    <p class="card-text"><strong>Duração da Sessão:</strong> 30 minutos</p>
+                    <a href="#" class="btn btn-sm btn-outline-warning">Gerenciar Segurança</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row gx-2">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Notificações por E-mail</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><strong>Novos Pedidos:</strong> Ativado</p>
+                    <p class="card-text"><strong>Erros do Sistema:</strong> Ativado (para Administradores)</p>
+                    <a href="#" class="btn btn-sm btn-outline-info">Configurar Alertas</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Backup e Manutenção</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><strong>Último Backup:</strong> 13/10/2025 (Sucesso)</p>
+                    <p class="card-text"><strong>Backup Automático:</strong> Diário (23:00)</p>
+                    <a href="#" class="btn btn-sm btn-outline-success">Rodar Backup Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+{% include 'rodape.html' %}
