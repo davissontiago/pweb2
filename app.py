@@ -6,17 +6,17 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/relatorios')
-def relatorios():
-    return render_template('relatorios.html')
+@app.route('/reports')
+def reports():
+    return render_template('reports.html')
 
-@app.route('/usuarios')
-def usuarios():
-    return render_template('usuarios.html')
+@app.route('/users')
+def users():
+    return render_template('users.html')
 
-@app.route('/configuracoes')
-def configuracoes():
-    return render_template('configuracoes.html')
+@app.route('/settings')
+def settings():
+    return render_template('settings.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
